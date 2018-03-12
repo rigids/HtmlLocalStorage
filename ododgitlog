@@ -1,0 +1,3 @@
+12:42:47.870085 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:42:54.176902 git.c:369               trace: built-in: git 'status'
+12:42:55.257198 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
