@@ -1,3 +1,139 @@
 12:42:47.870085 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
 12:42:54.176902 git.c:369               trace: built-in: git 'status'
 12:42:55.257198 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:43:00.605982 git.c:369               trace: built-in: git 'add' '.'
+12:43:01.154315 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:43:21.291958 git.c:369               trace: built-in: git 'commit' '-m' 'Initial commit'
+12:43:21.708558 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:43:23.934110 git.c:369               trace: built-in: git 'push'
+12:43:23.949811 run-command.c:626       trace: run_command: 'git-remote-https' 'origin' 'https://github.com/rigids/HtmlLocalStorage'
+12:43:28.733226 run-command.c:626       trace: run_command: 'git credential-manager get'
+12:43:28.969778 git.c:594               trace: exec: 'git-credential-manager' 'get'
+12:43:28.969778 run-command.c:626       trace: run_command: 'git-credential-manager' 'get'
+12:43:29.401440 ...\Common.cs:490       trace: [Main] git-credential-manager (v1.10.1) 'get'
+12:43:29.486130 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:43:29.486130 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:43:29.486130 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:43:29.501757 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:43:29.517384 ...\Common.cs:74        trace: [CreateAuthentication] detecting authority type for 'https://github.com/'.
+12:43:29.517384 ...uthentication.cs:134 trace: [GetAuthentication] created GitHub authentication for 'https://github.com/'.
+12:43:29.517384 ...\Common.cs:139       trace: [CreateAuthentication] authority for 'https://github.com/' is GitHub.
+12:43:30.218139 ...icationPrompts.cs:46 trace: [CredentialModalPrompt] prompting user for credentials for 'https://github.com/'.
+12:43:45.004756 ...\Program.cs:422      trace: [Run] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authority.<AcquireToken>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authentication.<InteractiveLogon>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Alm.Cli.CommonFunctions.<>c__DisplayClass9_4.<<QueryCredentials>b__4>d.MoveNext()
+12:43:45.017768 ...\Common.cs:458       trace: [LogEvent] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authority.<AcquireToken>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authentication.<InteractiveLogon>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Alm.Cli.CommonFunctions.<>c__DisplayClass9_4.<<QueryCredentials>b__4>d.MoveNext()
+12:43:45.019768 ...\Program.cs:422      trace: [Run] fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+12:43:45.119371 run-command.c:626       trace: run_command: 'git credential-manager get'
+12:43:45.158132 git.c:594               trace: exec: 'git-credential-manager' 'get'
+12:43:45.158632 run-command.c:626       trace: run_command: 'git-credential-manager' 'get'
+12:43:45.211519 ...\Common.cs:490       trace: [Main] git-credential-manager (v1.10.1) 'get'
+12:43:45.311783 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:43:45.327409 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:43:45.327409 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:43:45.327409 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:43:45.343034 ...\Common.cs:74        trace: [CreateAuthentication] detecting authority type for 'https://github.com/'.
+12:43:45.365168 ...uthentication.cs:134 trace: [GetAuthentication] created GitHub authentication for 'https://github.com/'.
+12:43:45.365168 ...\Common.cs:139       trace: [CreateAuthentication] authority for 'https://github.com/' is GitHub.
+12:43:45.427674 ...icationPrompts.cs:46 trace: [CredentialModalPrompt] prompting user for credentials for 'https://github.com/'.
+12:44:02.243184 ...\Program.cs:422      trace: [Run] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authority.<AcquireToken>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authentication.<InteractiveLogon>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Alm.Cli.CommonFunctions.<>c__DisplayClass9_4.<<QueryCredentials>b__4>d.MoveNext()
+12:44:02.243184 ...\Common.cs:458       trace: [LogEvent] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authority.<AcquireToken>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Authentication.Authentication.<InteractiveLogon>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Alm.Cli.CommonFunctions.<>c__DisplayClass9_4.<<QueryCredentials>b__4>d.MoveNext()
+12:44:02.246185 ...\Program.cs:422      trace: [Run] fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+12:44:02.293866 run-command.c:626       trace: run_command: 'bash' '-c' 'cat >/dev/tty && read -r line </dev/tty && echo "$line"'
+12:44:05.987847 run-command.c:626       trace: run_command: 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass' 'Password for '\''https://rigids@github.com'\'': '
+12:44:17.709557 run-command.c:626       trace: run_command: 'git credential-manager store'
+12:44:17.747318 git.c:594               trace: exec: 'git-credential-manager' 'store'
+12:44:17.747318 run-command.c:626       trace: run_command: 'git-credential-manager' 'store'
+12:44:17.809819 ...\Common.cs:490       trace: [Main] git-credential-manager (v1.10.1) 'store'
+12:44:17.931238 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:44:17.932244 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:44:17.932244 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:44:17.932244 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:44:17.963494 ...\Common.cs:74        trace: [CreateAuthentication] detecting authority type for 'https://github.com/'.
+12:44:17.979118 ...uthentication.cs:134 trace: [GetAuthentication] created GitHub authentication for 'https://github.com/'.
+12:44:17.979118 ...\Common.cs:139       trace: [CreateAuthentication] authority for 'https://github.com/' is GitHub.
+12:44:17.979118 ...\Program.cs:351      trace: [Store] storing GitHub credentials for 'https://github.com/'.
+12:44:18.048147 ...seSecureStore.cs:210 trace: [WriteCredential] credentials for 'git:https://github.com' written to store.
+12:44:18.095015 run-command.c:626       trace: run_command: 'git credential-manager store'
+12:44:18.132781 git.c:594               trace: exec: 'git-credential-manager' 'store'
+12:44:18.132781 run-command.c:626       trace: run_command: 'git-credential-manager' 'store'
+12:44:18.195281 ...\Common.cs:490       trace: [Main] git-credential-manager (v1.10.1) 'store'
+12:44:18.311182 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:44:18.332819 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:44:18.332819 ...\Where.cs:232        trace: [FindGitInstallations] found 1 Git installation(s).
+12:44:18.332819 ...Configuration.cs:405 trace: [LoadGitConfiguration] git All config read, 34 entries.
+12:44:18.364175 ...\Common.cs:74        trace: [CreateAuthentication] detecting authority type for 'https://github.com/'.
+12:44:18.364175 ...uthentication.cs:134 trace: [GetAuthentication] created GitHub authentication for 'https://github.com/'.
+12:44:18.364175 ...\Common.cs:139       trace: [CreateAuthentication] authority for 'https://github.com/' is GitHub.
+12:44:18.364175 ...\Program.cs:351      trace: [Store] storing GitHub credentials for 'https://github.com/'.
+12:44:18.411052 ...seSecureStore.cs:210 trace: [WriteCredential] credentials for 'git:https://github.com' written to store.
+12:44:18.448816 run-command.c:626       trace: run_command: 'send-pack' '--stateless-rpc' '--helper-status' '--thin' '--progress' 'https://github.com/rigids/HtmlLocalStorage/' '--stdin'
+12:44:18.464440 git.c:369               trace: built-in: git 'send-pack' '--stateless-rpc' '--helper-status' '--thin' '--progress' 'https://github.com/rigids/HtmlLocalStorage/' '--stdin'
+12:44:18.495696 run-command.c:626       trace: run_command: 'pack-objects' '--all-progress-implied' '--revs' '--stdout' '--thin' '--delta-base-offset' '--progress'
+12:44:18.511317 git.c:369               trace: built-in: git 'pack-objects' '--all-progress-implied' '--revs' '--stdout' '--thin' '--delta-base-offset' '--progress'
+12:44:20.754107 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:44:37.577634 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:45:30.605055 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:45:45.563032 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:45:53.867560 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+12:46:57.750769 git.c:369               trace: built-in: git 'version'
+12:46:57.804178 git.c:369               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+13:20:41.486440 git.c:344               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
+13:20:45.919009 git.c:344               trace: built-in: git 'status'
+13:20:46.086044 git.c:344               trace: built-in: git 'rev-parse' '--git-dir' '--is-inside-git-dir' '--is-bare-repository' '--is-inside-work-tree' '--short' 'HEAD'
